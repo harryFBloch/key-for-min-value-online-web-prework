@@ -3,9 +3,8 @@
 
 def key_for_min_value(name_hash)
   if !name_hash.empty?
-    name_hash.each { |key, value|
-      
-    }
+    valueArray =name_hash.collect {|key,value|}
+    puts valueArray
   else
     return nil
   end
