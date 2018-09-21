@@ -11,7 +11,8 @@ def key_for_min_value(name_hash)
       end
       name_hash.each {|key, value| 
         if value == num1
-        return key
+          return key
+        end
       }
     }
     puts valueArray
