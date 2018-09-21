@@ -4,7 +4,10 @@
 def key_for_min_value(name_hash)
   if !name_hash.empty?
     valueArray = name_hash.collect {|key,value| value}
-    valueArray.
+    valueArray..sort do |a, b|
+      a <=> b
+    end
+    puts valueArray
   else
     return nil
   end
