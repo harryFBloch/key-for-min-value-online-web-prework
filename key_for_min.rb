@@ -16,7 +16,6 @@ def key_for_min_value(name_hash)
         end
       }
     }
-    puts valueArray
   else
     return nil
   end
