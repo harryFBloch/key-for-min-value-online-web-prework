@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
         num1 = number
       end
       name_hash.each {|key, value|
-      puts "key= #{key} value=#{value}"
+      puts "key= #{key} value=#{value} num1 = #{num1}"
         if value == num1
           return key
         end
