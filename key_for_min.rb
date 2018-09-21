@@ -5,10 +5,12 @@ def key_for_min_value(name_hash)
   if !name_hash.empty?
     valueArray = name_hash.collect {|key,value| value}
     num1 = 0
-    valueArray.each() { |number| 
-      if num1 > number
-        num1 = number
+    i = 0
+    while i < valueArray.length 
+      if num1 > valueArray[i]
+        num1 = valueArray[i]
       end
+    end
       name_hash.each {|key, value|
       puts "key= #{key} value=#{value} num1 = #{num1}"
         if value == num1
