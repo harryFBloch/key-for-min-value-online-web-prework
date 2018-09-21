@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
   if !name_hash.empty?
     valueArray = name_hash.collect {|key,value| value}
-    puts valueArray
+    valueArray.
   else
     return nil
   end
