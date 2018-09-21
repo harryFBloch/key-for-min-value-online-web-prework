@@ -9,6 +9,7 @@ def key_for_min_value(name_hash)
     while i < valueArray.length 
       if num1 > valueArray[i]
         num1 = valueArray[i]
+        i += 1
       end
     end
       name_hash.each {|key, value|
