@@ -6,9 +6,13 @@ def key_for_min_value(name_hash)
     valueArray = name_hash.collect {|key,value| value}
     num1 = 0
     valueArray.each { |number| 
-      if num1 < number
+      if num1 > number
         num1 = number
       end
+      name_hash.each {|key, value| 
+        if value == num1
+        return key
+      }
     }
     puts valueArray
   else
