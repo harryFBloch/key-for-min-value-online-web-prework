@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
     num1 = 0
     i = 0
     while i < valueArray.length 
-      puts valueArray[i]
+      puts valueArray[i].class
       if num1 > valueArray[i]
         num1 = valueArray[i]
       end
